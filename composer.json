@@ -1,0 +1,9 @@
+{
+    "require": {
+        "slim/slim": "2.*",
+        "illuminate/database": "4.0.*",
+        "monolog/monolog": "@stable",
+        "slim/extras": "2.*",
+        "twig/twig": "1.*"
+    }
+}

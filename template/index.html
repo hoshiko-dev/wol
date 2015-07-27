@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="common/js/wol.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          自宅内WOLツール
+        </div>
+      </div>
+    </header>
+    <section id="main">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="nav nav-pills nav-stacked">
+              <li class="active"><a href="#" data-toggle="pill">Wolリスト</a></li>
+            </div>
+          </div>
+          <div class="col-md-10">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="container" >
+                  <table class="table table-striped table-condensed">
+                    <tr>
+                      <th>ID</th>
+                      <th>PC名</th>
+                      <th>Macアドレス</th>
+                      <th>起動</th>
+                      <th>チェック</th>
+                    </tr>
+                    {% for wol in wol_list %}
+                    <tr>
+                      <td>{{wol.id}}</td>
+                      <td>{{wol.name}}</td>
+                      <td>{{wol.addr}}</td>
+                      <td><a class="btn btn-info pc-on" href="#" post-id={{wol.id}}>起動</a></td>
+                      <td><a class="btn btn-primary pc-check" href="#" check-id="{{wol.id}}">確認</a>  <span class="result" result-id="{{wol.id}}"></span></td>
+                    </tr>
+                    {% endfor %}
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "PC2",
+    "ipAddr": "192.168.0.1",
+    "addr":  "XX:XX:XX:XX:XX:XX",
+    "command": "wakeonlan "
+  },
+  {
+    "id": 2,
+    "name": "PC1",
+    "ipAddr": "192.168.0.2",
+    "addr":  "XX:XX:XX:XX:XX:XX",
+    "command": "wakeonlan "
+  }
+]
