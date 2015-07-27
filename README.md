@@ -1,6 +1,6 @@
 # wol
-自宅内でWakeUpLanでSleepさせたPCを起動させるためのWebアプリ
-PCの起動・停止チェックはping
+自宅内でWakeUpLanでSleepさせたPCを起動させるためのWebアプリ  
+PCの起動・停止チェックはping  
 
 ## 環境
 
